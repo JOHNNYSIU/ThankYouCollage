@@ -1,4 +1,3 @@
-//add thank you code here
 PImage lol;
 PImage league;
 float Curve;
@@ -10,6 +9,7 @@ float Yawn;
 float Slept;
 float Tired;
 float Sleep;
+PImage Tim;
 
 void setup () {
   size(1000, 1000);
@@ -17,6 +17,7 @@ void setup () {
   lol = loadImage ("Pc.jpg");
   league = loadImage ("League.jpg");
   Koffe = loadImage ("Koffee.jpg");
+  Tim = loadImage ("NB3.jpg");
   Curve = 500;
   Hmm = 530;
   Yawn = 400;
@@ -29,6 +30,7 @@ void draw () {
   image (lol, 0, 500, 600, 400);
   image (league, 126, 577, 348, 200);
   image (Koffe, 555, 600, 450, 250);
+  image (Tim,mouseX,mouseY,300,300);
   textSize(100);
   fill(random(255), 0, 0, 255);
   text("R", 25, 100);
